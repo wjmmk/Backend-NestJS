@@ -12,7 +12,7 @@ lerna-debug.log*
 
 # OS
 .DS_Store
-
+.env
 
 # Tests
 /coverage
@@ -22,7 +22,6 @@ lerna-debug.log*
 /.idea
 .project
 .classpath
-.env
 .c9/
 *.launch
 .settings/
@@ -34,3 +33,4 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
