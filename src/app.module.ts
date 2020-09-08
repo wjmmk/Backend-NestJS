@@ -28,7 +28,7 @@ import { CampanaModule } from './campanas/campanas.module';
               password: process.env.PASSWORD,
               database: process.env.DATABASE,
               synchronize: false,
-              entities: ["dist/**/*.entity{.ts,.js}"],
+              entities: ['dist/**/*.entity{.ts,.js}'],
               migrations: ['project2/migrations/*.ts'],
               cli: { migrationsDir: 'project2/migrations' },
             }),
