@@ -1,9 +1,9 @@
 import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 
-@Entity()
+@Entity('campanas')
 export class Campanas {
-    @PrimaryGeneratedColumn()
-    id: number;
+    @PrimaryGeneratedColumn('uuid')
+    id: string;
   
     @Column('text')
     names: string;
@@ -18,5 +18,5 @@ export class Campanas {
     addresses: string;
 
     @Column({ type: 'date' })
-    crate_at: Date;    
+    create_at: Date;    
 }

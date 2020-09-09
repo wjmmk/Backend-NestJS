@@ -27,7 +27,7 @@ export class CampanaService {
           newCampana.surnames = campanaNew.surnames;
           newCampana.phones = campanaNew.phones;
           newCampana.addresses = campanaNew.addresses;
-          newCampana.crate_at = campanaNew.crate_at;
+          newCampana.create_at = campanaNew.create_at;
           
           return this.userRepository.save(newCampana);
       }
@@ -38,7 +38,7 @@ export class CampanaService {
           campanaUpdate.surnames = campanaActualizar.surnames;
           campanaUpdate.phones = campanaActualizar.phones;
           campanaUpdate.addresses = campanaActualizar.addresses;
-          campanaUpdate.crate_at = campanaActualizar.crate_at;
+          campanaUpdate.create_at = campanaActualizar.create_at;
 
           return await this.userRepository.save(campanaUpdate);
       }

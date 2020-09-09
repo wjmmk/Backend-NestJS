@@ -3,5 +3,5 @@ export class CreateCampanaDTO {
     readonly surnames: string;
     readonly phones: number;
     readonly addresses: string;
-    readonly crate_at: Date;
+    readonly create_at: Date;
 }

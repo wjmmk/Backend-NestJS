@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import configuration from './config/configuration'
+import   configuration from './config/configuration'
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { ProductModule } from './product/product.module';
@@ -20,18 +20,7 @@ import { CampanaModule } from './campanas/campanas.module';
 
             ProductModule,
 
-            TypeOrmModule.forRoot({
-              type: 'mysql',
-              host: process.env.HOST,
-              port: 3306,
-              username: process.env.USER_NAME,
-              password: process.env.PASSWORD,
-              database: process.env.DATABASE,
-              synchronize: false,
-              entities: ['dist/**/*.entity{.ts,.js}'],
-              migrations: ['project2/migrations/*.ts'],
-              cli: { migrationsDir: 'project2/migrations' },
-            }),
+            TypeOrmModule.forRoot(),
 
             CampanaModule
             ],
